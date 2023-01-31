@@ -1,5 +1,4 @@
 const pool = require("../database/db");
-const { Pool } = require("../database/db");
 
 const getAllcategories = async (req, res, next) => {
   try {
@@ -93,5 +92,5 @@ module.exports = {
   getAllcategories,
   createCategory,
   updateCategory,
-  deleteCategory
+  deleteCategory,
 };

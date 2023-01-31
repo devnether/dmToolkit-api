@@ -6,6 +6,7 @@ const app = express();
 
 const itemRoutes = require("./routes/item.routes");
 const categoryRoutes = require("./routes/category.routes");
+const campaignRoutes = require("./routes/campaign.routes");
 
 app.use(morgan("dev"));
 app.use(cors());
@@ -13,6 +14,7 @@ app.use(express.json());
 
 app.use(itemRoutes);
 app.use(categoryRoutes);
+app.use(campaignRoutes);
 
 app.use((err, req, res, next) => {
   res.json({
